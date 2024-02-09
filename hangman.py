@@ -1,7 +1,7 @@
                                                                             #Hangman Game
 
 #importing the libraries
-import random
+import secrets
 
 
 
@@ -21,7 +21,7 @@ word_list = ['horse','door','song','rip','backbone','bomb','treasure','garbage',
 
 
 #The word to be found.
-word = random.choice(word_list)
+word = secrets.SystemRandom().choice(word_list)
 #Guessed word
 guessed_word = list('*'*len(word))
 #guessed letters
